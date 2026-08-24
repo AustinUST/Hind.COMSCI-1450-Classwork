@@ -45,3 +45,7 @@ print("welcome to the world\nThe year is 2026 \"UST\".")
 
 
 print('This is "UST"')
+Name = str(input("enter your name: "))
+print(f"Welcome to the class, {Name}!")
+
+
