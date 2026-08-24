@@ -1,1 +1,34 @@
 print("Welcome to intro to python")
+#print
+#boolean = True/ False
+Class1 = True
+# var = 10
+var = 10
+#function
+print(f" {var * 10}")
+# floats
+Not = float(input())
+print(Not)
+#if then statements
+if Not > 10:
+    print(f" {Not} is greater than 10")
+else:
+    print(f" {Not} is less than 10")
+
+#elifs
+
+num1 = int(input())
+num2 = float(input())
+
+if num1 <= num2:
+    print(f"{num1} and {num2} are equal")
+elif num1 > num2:
+    print(f"{num1} is greater than {num2}")
+else:
+    print{f"{num1} is less than {num2}"}
+
+#loops
+num3 = 6
+
+for i in range(num3):
+    print(i)
