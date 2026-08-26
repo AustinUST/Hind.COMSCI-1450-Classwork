@@ -37,15 +37,9 @@ for h in range(6):
         print(row2)
 
 
-jump1 = 6.64674646
-
-print(round(jump1, 3))
-print("welcome to the world\nThe year is 2026 \"UST\".")
-
-
 
 print('This is "UST"')
-Name = str(input("enter your name: "))
-print(f"Welcome to the class, {Name}!")
-
-
+Student = str(input("Enter your name: "))
+Score = float(input("Enter student's score: "))
+print(f"Student score is {Score}")
+print(f" With bonus, the score is {Score + 5}")
