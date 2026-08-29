@@ -16,3 +16,4 @@ x3 = input(" Enter your Power: ")
 powerlvl = int(x2) ** int(x3)
 print(f"Your power level is {powerlvl}")
 
+print(9)
