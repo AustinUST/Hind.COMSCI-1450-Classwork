@@ -25,7 +25,7 @@ if num1 <= num2:
 elif num1 > num2:
     print(f"{num1} is greater than {num2}")
 else:
-    print{f"{num1} is less than {num2}"}
+    print(f"{num1} is less than {num2}")
 
 #loops
 num3 = 6
