@@ -1,4 +1,4 @@
-second = 7
+second = 7200
 hrs = second / 3600
 print(hrs)
 sec = second % 3600
