@@ -1,4 +1,4 @@
-#question 1
+'''#question 1
 count = 1
 while (count <= 10):
     print(count)
@@ -130,12 +130,27 @@ for letter in word1:
     if letter == "a":
         a_count += 1
 print(f" The amount of times 'a' appears in the word is {a_count}")
-
-
-
-
-
-
-  
-
+'''
+#19
+for i in range(4):
+    for j in range(4):
+        print(i, end ="",) 
+    print()
+#20
+for i in range(4):
+    star = "*"
+    for j in range(5):
+        print(star, end="")
+    print()
+#21
+for i in range(6):
+    for j in range(i):
+        print(j, end = "")
+    print()
+#22
+for i in range(5):
+    star1 = "*"
+    for j in range(i):
+        star1 += "*"
+    print(star1)
 
