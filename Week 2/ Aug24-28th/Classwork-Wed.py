@@ -17,3 +17,11 @@ powerlvl = int(x2) ** int(x3)
 print(f"Your power level is {powerlvl}")
 
 print(9)
+
+def sum(x):
+    count = 0
+    for i in range(10):
+        count += x + 1
+    return count
+
+
