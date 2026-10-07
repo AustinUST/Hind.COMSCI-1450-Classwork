@@ -13,7 +13,10 @@ o It must strictly end with the suffix "2026".
 • Prompt the user to enter a raw code string using input().
 • Call validate_access_code(raw_code).
 • Print a success message if it returns True, or an access denied
-message if it returns False'''
+message if it returns False
+from importlib.metadata import files
+
+
 def validate_access_code(raw_code):
     cleaned_code = raw_code.strip().lower()
     if cleaned_code.startswith("admin") and cleaned_code.endswith("2026"):
@@ -26,7 +29,7 @@ if validate_access_code(raw_code):
 else:
     print("Access denied. Invalid code.")
 #2
-'''Write a function named audit_text_stream(flagged_word) that
+Write a function named audit_text_stream(flagged_word) that
 accepts a single string parameter. Inside the function:
 a. Initialize an occurrence_total counter variable at 0.
 b. Implement a while True loop that repeatedly prompts the
@@ -38,7 +41,7 @@ d. For every other sentence entered, clean the input by making it
 entirely lowercase, and use the string .count() method to see
 how many times the flagged_word appears in it.Accumulate these counts into your occurrence_total.
 • The function must return the total number of flagged words
-counted across the entire session'''
+counted across the entire session
 def audit_text_stream(flagged_word):
     occurrence_total = 0
     while True:
@@ -48,7 +51,14 @@ def audit_text_stream(flagged_word):
         cleaned_sentence = sentence.lower()
         occurrence_total += cleaned_sentence.count(flagged_word)
     return occurrence_total
-'''Write a validation function named
+Write a validation function named
 verify_file_record(line_content) that accepts a single string
-representing one raw row of text from a file.'''\
+representing one raw row of text from a file.'''
 #3
+'''read a text file named data.txt that contains multiple lines of text. Use the'''
+f = open("data.txt", "r")
+for line in f:
+
+    print(line.strip().upper())
+f.close()
+
