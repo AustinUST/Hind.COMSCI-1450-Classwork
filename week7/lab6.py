@@ -55,10 +55,12 @@ Write a validation function named
 verify_file_record(line_content) that accepts a single string
 representing one raw row of text from a file.'''
 #3
-'''read a text file named data.txt that contains multiple lines of text. Use the'''
+'''add the data from the file together'''
 f = open("data.txt", "r")
+c = 0
 for line in f:
-
-    print(line.strip().upper())
+    c += int(line)
+print(c)
+    
 f.close()
 
