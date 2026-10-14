@@ -31,6 +31,8 @@ if validate_access_code(raw_code):
     print("Access granted. Welcome!")
 else:
     print("Access denied. Invalid code.")'''
+
+
 #2
 '''Write a function named audit_text_stream(flagged_word) that
 accepts a single string parameter. Inside the function:
@@ -54,10 +56,15 @@ def audit_text_stream(flagged_word):
         cleaned_sentence = sentence.lower()
         occurrence_total += cleaned_sentence.count(flagged_word)
     return occurrence_total
+#3
 '''Write a validation function named
 verify_file_record(line_content) that accepts a single string
-representing one raw row of text from a file.
-#3'''
+representing one raw row of text from a file.'''
+def verify_file_record(line_content):
+    f.open("#3.txt", "w")
+    f.write(line_content)
+    f.close()
+
 #4
 f = open("Q4.txt", "w")
 f.write("10")
