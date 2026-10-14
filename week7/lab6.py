@@ -34,19 +34,7 @@ else:
 
 
 #2
-'''Write a function named audit_text_stream(flagged_word) that
-accepts a single string parameter. Inside the function:
-a. Initialize an occurrence_total counter variable at 0.
-b. Implement a while True loop that repeatedly prompts the
-user to enter a sentence via input().
-c. If the user enters the word "exit" (in any casing
-configuration, like "EXIT" or "Exit"), the loop must break
-immediately.
-d. For every other sentence entered, clean the input by making it
-entirely lowercase, and use the string .count() method to see
-how many times the flagged_word appears in it.Accumulate these counts into your occurrence_total.
-• The function must return the total number of flagged words
-counted across the entire session'''
+
 def audit_text_stream(flagged_word):
     occurrence_total = 0
     while True:
@@ -57,9 +45,7 @@ def audit_text_stream(flagged_word):
         occurrence_total += cleaned_sentence.count(flagged_word)
     return occurrence_total
 #3
-'''Write a validation function named
-verify_file_record(line_content) that accepts a single string
-representing one raw row of text from a file.'''
+
 def verify_file_record(line_content):
     f = open("#3.txt", "w")
     f.write(line_content)
@@ -95,4 +81,13 @@ for line in f:
     sum += int(line.strip())
 print("The sum of the numbers in the file is:", sum)
 f.close()
+#6
+x = []
+total = 0
+for i in range(5):
+    num = int(input("Enter a number: "))
+    x.append(num)
+    total += num
+print("The sum of the numbers is:", total)
+
 
