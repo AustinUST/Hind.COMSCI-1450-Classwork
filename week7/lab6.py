@@ -61,7 +61,7 @@ def audit_text_stream(flagged_word):
 verify_file_record(line_content) that accepts a single string
 representing one raw row of text from a file.'''
 def verify_file_record(line_content):
-    f.open("#3.txt", "w")
+    f = open("#3.txt", "w")
     f.write(line_content)
     f.close()
 
@@ -87,3 +87,12 @@ print("The sum of the numbers in the file is:", sum)
 avg = sum / 3
 print("The average of the numbers in the file is:", avg)
 w.close()
+
+#5
+f = open("numbers.txt", "r")
+sum = 0
+for line in f:
+    sum += int(line.strip())
+print("The sum of the numbers in the file is:", sum)
+f.close()
+
