@@ -31,3 +31,4 @@ for y in o:
         smallest = y
 print(smallest)
 #8
+print(o[:5])

@@ -82,12 +82,17 @@ for line in f:
 print("The sum of the numbers in the file is:", sum)
 f.close()
 #6
-x = []
-total = 0
-for i in range(5):
-    num = int(input("Enter a number: "))
-    x.append(num)
-    total += num
-print("The sum of the numbers is:", total)
+''' Write a Python program that reads a list of numbers from a user
+then write only the odd numbers in a text file'''
+f = open("numbers.txt", "r")
+odd_numbers = []
+for line in f:
+    num = int(line.strip())
+    if num % 2 != 0:
+        odd_numbers.append(num)
+f.close()
 
-
+f = open("numbers.txt", "w")
+for num in odd_numbers:
+    f.write(str(num) + "\n")
+f.close()
