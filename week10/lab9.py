@@ -33,7 +33,7 @@ button = tk.Button(root, text="Convert", command=convert)
 button.pack(pady=10)
 
 root.mainloop()'''
-'''
+
 #1
 #evaluate the grade **pass or fail
 def evaluate_grade():
@@ -71,7 +71,7 @@ button.pack(pady=10)
 exit_button = tk.Button(rootp, text="Exit", command=rootp.destroy)
 exit_button.pack(pady=10)
 
-rootp.mainloop()'''
+rootp.mainloop()
 
 #3
 '''Create a window featuring a header text label that says: "Select your dietary preferences:".
