@@ -41,9 +41,6 @@ menu_bar.add_cascade(label="Applications", menu=apps_menu)
 
 root.config(menu=menu_bar)
 
-# ---------------------------------------------------------------
-# Part 2, Page 1: Fitness Page
-# ---------------------------------------------------------------
 intensity_var = tk.StringVar(value="Low")
 
 activity_label = tk.Label(fitness_page, text="Activity Name:")
