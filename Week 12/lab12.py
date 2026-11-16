@@ -1,3 +1,4 @@
+#1
 class Animal:
     def __init__(self, name,):
         self.name = name
@@ -9,7 +10,7 @@ class cat(Animal):
 c1 = cat("Whiskers")
 c1.meow()
 c1.eat()
-
+#2
 class shape:
     def __init__(self, describe, name):
         self.name = name
@@ -24,7 +25,7 @@ class square(shape):
 s1 = square(4, "Square")
 print(s1.sides())
 print(s1.area(5))
-
+#4
 class manager:
     def __init__(self, name, department):
         self.name = name
@@ -40,20 +41,6 @@ class employee(manager):
 e1 = employee("Alice", "HR", "Recruiter")
 print(e1.manage())
 print(e1.work())
+#5
+print("hey")
 
-class price:
-    def __init__(self, item, cost):
-        self.item = item
-        self.cost = cost
-    def display_price(self):
-        return f"The price of {self.item} is ${self.cost}."
-class discount(price):
-    def __init__(self, item, cost, discount_percentage):
-        super().__init__(item, cost)
-        self.discount_percentage = discount_percentage
-    def discounted_price(self):
-        discounted_cost = self.cost * (1 - self.discount_percentage / 100)
-        return f"The discounted price of {self.item} is ${discounted_cost:.2f}."
-d1 = discount("Laptop", 1000, 10)
-print(d1.display_price())
-print(d1.discounted_price())    
