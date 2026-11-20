@@ -31,31 +31,58 @@ calculates the total delivery fee.'''
 #1 
 gpa = float(input("Enter your GPA on a 4.0 scale: "))
 sat = int(input("Enter your SAT Score: "))
-if (gpa >= 3.5) and (sat >= 1000):
-    print("Accepted")
-elif (gpa >= 3.0) and (sat >= 1100):
-    print("Accepted")
-else:
-    print("Rejected")
-if (gpa < 0.0) or (gpa >4.0):
+if gpa < 0.0 or gpa > 4.0:
     print("Invalid GPA")
 elif (sat < 0):
     print("Invalid SAT score")
-else: 
-    pass
+elif gpa >= 2.5 and ((gpa >= 3.5 and sat >= 1000) or
+                      (gpa >= 3.0 and sat >= 1100)):
+    print("Accepted")
+else:
+    print("Rejected")
+
 #2
 package_weight = float(input("Enter the package weight in kg: "))
-premium_member = str(input("Are you a premium member? (yes/no): "))
-if (package_weight <= 2):
-    if (premium_member == "yes" and package_weight <= 5):
-        print("Shipping cost: free")
-    else:
+premium_member = input("Are you a premium member? (yes/no): ").strip().lower()
+if package_weight <= 0:
+    print("Invalid weight")
+elif premium_member == "yes" and package_weight <= 5:
+    print("Shipping cost: free")
+elif package_weight <= 2:
+    print("Shipping cost: $5")
+elif package_weight <= 5:
+    print("Shipping cost: $10")
+elif package_weight <= 10:
+    print("Shipping cost: $15")
+else:
+    print("Shipping cost: $25")
+
+#3
+order = float(input("Enter the amount of money the order was: $ "))
+distance = float(input("Enter the distance of the delivery in kilometers: "))
+if order < 0:
+    print("Invalid order amount")
+elif distance < 0:
+    print("Invalid distance")
+elif order >= 50:
+    value = 0
+elif order >= 30:
+    value = 3
+    if distance > 5:
+        value += 2
+else:
+    value = 5
+    if distance > 5:
+        value += 2
+if order >= 0 and distance >= 0:
+    print(f"The fee is ${value}")
+    print("Shipping cost: free")
+else:
         print("Shipping cost: $5")
-elif (package_weight <= 5):
-    if (premium_member == "yes" and package_weight <= 5):
+
+if (premium_member == "yes" and package_weight <= 5):
         print("Shipping cost: free")
-    else:
-         print("Shipping cost: $10")
+
 elif (package_weight <= 10):
     print("Shipping cost: $15")
 else:
