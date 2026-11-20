@@ -42,5 +42,5 @@ e1 = employee("Alice", "HR", "Recruiter")
 print(e1.manage())
 print(e1.work())
 #5
-print("hey")
+
 

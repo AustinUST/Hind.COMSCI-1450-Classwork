@@ -38,10 +38,11 @@ class dog:
 class cat:
     def method(speaks):
         print("MEOWWWW")
-class animal(dog, cat):
+class Confused(dog, cat):
     def method(animal):
         dog.method(animal)
         cat.method(animal)
-a1 = animal()
-a1.method() 
+a1 = Confused()
+a1.method()
+ 
 
